@@ -1,1 +1,1033 @@
 
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Kursus Komputer Privat YMII | Cileungsi, Online & Offline</title>
+
+<meta name="description" content="Kursus komputer privat Rumah Belajar Komputer YMII. Belajar Microsoft Office, Excel, Digital Marketing, AutoCAD, Jaringan Komputer, Web Design dan Web Programming. Online dan offline untuk pemula.">
+<meta name="keywords" content="kursus komputer, kursus komputer privat, kursus komputer Cileungsi, kursus Microsoft Office, kursus Excel, kursus AutoCAD, kursus web programming, kursus digital marketing">
+<meta name="author" content="Rumah Belajar Komputer Privat YMII">
+
+<meta property="og:title" content="Rumah Belajar Komputer Privat YMII">
+<meta property="og:description" content="Tingkatkan skill komputer melalui pembelajaran privat, online maupun offline.">
+<meta property="og:type" content="website">
+
+<style>
+:root {
+    --primary: #123c69;
+    --secondary: #1769aa;
+    --accent: #f5a623;
+    --light: #f4f7fb;
+    --dark: #172b4d;
+    --text: #536176;
+    --white: #ffffff;
+    --green: #159957;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--dark);
+    line-height: 1.7;
+    background: var(--white);
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 92%;
+    max-width: 1150px;
+    margin: auto;
+}
+
+section {
+    padding: 75px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 38px;
+}
+
+.section-title h2 {
+    font-size: clamp(25px, 4vw, 36px);
+    color: var(--primary);
+    line-height: 1.3;
+    margin-bottom: 12px;
+}
+
+.section-title p {
+    max-width: 650px;
+    margin: auto;
+    color: var(--text);
+}
+
+header {
+    background: white;
+    box-shadow: 0 2px 15px rgba(0,0,0,.07);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar {
+    min-height: 76px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.brand {
+    color: var(--primary);
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 1.35;
+}
+
+.brand small {
+    display: block;
+    color: var(--text);
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.nav-links a {
+    color: var(--dark);
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: var(--secondary);
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 21px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background: var(--accent);
+    color: #172b4d;
+}
+
+.btn-primary:hover {
+    background: #ffc04d;
+    transform: translateY(-2px);
+}
+
+.btn-green {
+    background: var(--green);
+    color: white;
+}
+
+.btn-green:hover {
+    background: #117a46;
+}
+
+.btn-outline {
+    border: 1px solid rgba(255,255,255,.7);
+    color: white;
+}
+
+.hero {
+    padding: 85px 0;
+    color: white;
+    background:
+        radial-gradient(circle at 90% 10%, #347eb8 0, transparent 35%),
+        linear-gradient(120deg, #102b50, #1769aa);
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1.2fr .8fr;
+    align-items: center;
+    gap: 45px;
+}
+
+.hero-label {
+    display: inline-block;
+    padding: 6px 13px;
+    border-radius: 30px;
+    background: rgba(255,255,255,.13);
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: clamp(34px, 5vw, 52px);
+    line-height: 1.18;
+    margin-bottom: 22px;
+}
+
+.hero p {
+    color: #e4edf8;
+    margin-bottom: 25px;
+    max-width: 600px;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.hero-visual {
+    min-height: 300px;
+    padding: 30px;
+    border: 1px solid rgba(255,255,255,.2);
+    border-radius: 22px;
+    background: rgba(255,255,255,.09);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 17px;
+}
+
+.visual-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    border-radius: 12px;
+    background: white;
+    color: var(--primary);
+    font-weight: bold;
+}
+
+.visual-icon {
+    font-size: 27px;
+}
+
+.features {
+    padding: 28px 0;
+    background: #fff;
+    border-bottom: 1px solid #e7edf4;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.feature {
+    text-align: center;
+    font-weight: bold;
+    color: var(--primary);
+}
+
+.feature span {
+    display: block;
+    font-size: 27px;
+    margin-bottom: 5px;
+}
+
+.courses {
+    background: var(--light);
+}
+
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.course-card {
+    background: white;
+    border: 1px solid #e5eaf1;
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgba(25,50,80,.04);
+    transition: .25s;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(25,50,80,.1);
+}
+
+.course-head {
+    padding: 24px 23px 18px;
+    background: linear-gradient(135deg, #edf5ff, #f8fbff);
+    border-bottom: 1px solid #e7edf5;
+}
+
+.course-icon {
+    font-size: 34px;
+    margin-bottom: 9px;
+}
+
+.course-head h3 {
+    color: var(--primary);
+    font-size: 21px;
+    line-height: 1.35;
+}
+
+.course-head p {
+    font-size: 13px;
+    color: var(--text);
+    margin-top: 7px;
+}
+
+.course-body {
+    padding: 22px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.course-info {
+    list-style: none;
+    margin-bottom: 18px;
+}
+
+.course-info li {
+    padding: 6px 0;
+    font-size: 14px;
+    color: var(--text);
+    border-bottom: 1px dashed #e8edf2;
+}
+
+.course-info li strong {
+    color: var(--dark);
+}
+
+.price-box {
+    padding: 15px;
+    background: #f5f8fc;
+    border-radius: 10px;
+    margin-top: auto;
+    margin-bottom: 17px;
+}
+
+.price-label {
+    font-size: 12px;
+    color: var(--text);
+}
+
+.price {
+    color: var(--primary);
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+.register-price {
+    font-size: 13px;
+    color: var(--text);
+}
+
+.course-card .btn {
+    width: 100%;
+}
+
+.note {
+    font-size: 12px;
+    color: var(--text);
+    margin-top: 12px;
+}
+
+.method-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.method-card {
+    border: 1px solid #e5eaf1;
+    border-radius: 14px;
+    padding: 27px;
+    text-align: center;
+}
+
+.method-card span {
+    font-size: 36px;
+}
+
+.method-card h3 {
+    color: var(--primary);
+    margin: 12px 0 7px;
+}
+
+.method-card p {
+    color: var(--text);
+    font-size: 14px;
+}
+
+.cta {
+    background: linear-gradient(120deg, #102b50, #1769aa);
+    color: white;
+    text-align: center;
+}
+
+.cta h2 {
+    font-size: clamp(26px, 4vw, 38px);
+    line-height: 1.3;
+    margin-bottom: 15px;
+}
+
+.cta p {
+    max-width: 650px;
+    margin: 0 auto 25px;
+    color: #e1ebf7;
+}
+
+.faq {
+    max-width: 800px;
+    margin: auto;
+}
+
+details {
+    border: 1px solid #e5eaf1;
+    border-radius: 10px;
+    padding: 17px 20px;
+    margin-bottom: 12px;
+}
+
+summary {
+    font-weight: bold;
+    color: var(--primary);
+    cursor: pointer;
+}
+
+details p {
+    padding-top: 12px;
+    color: var(--text);
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.contact-card {
+    padding: 27px;
+    border: 1px solid #e5eaf1;
+    border-radius: 14px;
+}
+
+.contact-card h3 {
+    color: var(--primary);
+    margin-bottom: 12px;
+}
+
+.contact-card p {
+    color: var(--text);
+    margin-bottom: 8px;
+}
+
+.contact-card a {
+    color: var(--secondary);
+    font-weight: bold;
+}
+
+footer {
+    background: #0d2039;
+    color: #dbe5f2;
+    text-align: center;
+    padding: 30px 15px;
+    font-size: 13px;
+}
+
+footer a {
+    color: white;
+}
+
+.floating-wa {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 200;
+    background: var(--green);
+    color: white;
+    padding: 13px 19px;
+    border-radius: 40px;
+    font-weight: bold;
+    box-shadow: 0 5px 20px rgba(0,0,0,.2);
+}
+
+@media (max-width: 900px) {
+    .course-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-visual {
+        min-height: auto;
+    }
+
+    .nav-links {
+        gap: 12px;
+    }
+}
+
+@media (max-width: 600px) {
+    section {
+        padding: 55px 0;
+    }
+
+    .navbar {
+        padding: 13px 0;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .nav-links {
+        width: 100%;
+        overflow-x: auto;
+        padding-bottom: 5px;
+        white-space: nowrap;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+    }
+
+    .nav-links .nav-cta {
+        display: none;
+    }
+
+    .hero {
+        padding: 55px 0;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .course-grid,
+    .method-grid,
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .feature-grid {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 22px;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+    }
+
+    .floating-wa {
+        right: 12px;
+        bottom: 12px;
+        font-size: 13px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="container navbar">
+        <a href="#beranda" class="brand">
+            RUMAH BELAJAR YMII
+            <small>Kursus Komputer Privat</small>
+        </a>
+
+        <nav class="nav-links">
+            <a href="#beranda">Beranda</a>
+            <a href="#paket">Paket Kursus</a>
+            <a href="#keunggulan">Keunggulan</a>
+            <a href="#faq">FAQ</a>
+            <a href="#kontak">Kontak</a>
+            <a class="nav-cta btn btn-primary" href="#paket">Pilih Kursus</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+
+<section class="hero" id="beranda">
+    <div class="container hero-grid">
+        <div>
+            <span class="hero-label">Belajar dari Dasar hingga Mahir</span>
+
+            <h1>Tingkatkan Skill Komputer, Buka Peluang Lebih Luas!</h1>
+
+            <p>
+                Ingin lebih mahir menggunakan komputer untuk sekolah,
+                kuliah, pekerjaan, atau bisnis? Pilih program kursus
+                komputer privat yang sesuai kebutuhan Anda.
+                Belajar dengan praktik langsung bersama pengajar.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#paket" class="btn btn-primary">
+                    Lihat Paket Kursus
+                </a>
+
+                <a href="https://wa.me/6282120388854?text=Halo%20Rumah%20Belajar%20Komputer%20YMII%2C%20saya%20ingin%20konsultasi%20kursus."
+                   class="btn btn-outline" target="_blank" rel="noopener">
+                    Konsultasi Gratis
+                </a>
+            </div>
+        </div>
+
+        <div class="hero-visual">
+            <div class="visual-item">
+                <span class="visual-icon">💻</span>
+                <div>Belajar Komputer Privat</div>
+            </div>
+
+            <div class="visual-item">
+                <span class="visual-icon">📊</span>
+                <div>Office, Excel & Administrasi</div>
+            </div>
+
+            <div class="visual-item">
+                <span class="visual-icon">🌐</span>
+                <div>Website & Digital Marketing</div>
+            </div>
+
+            <div class="visual-item">
+                <span class="visual-icon">🛠️</span>
+                <div>Desain Teknik & Jaringan</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="features">
+    <div class="container feature-grid">
+        <div class="feature">
+            <span>👨‍🏫</span>
+            Belajar Privat
+        </div>
+        <div class="feature">
+            <span>🎯</span>
+            Cocok untuk Pemula
+        </div>
+        <div class="feature">
+            <span>💻</span>
+            Online & Offline
+        </div>
+        <div class="feature">
+            <span>📚</span>
+            Praktik Langsung
+        </div>
+    </div>
+</div>
+
+<section class="courses" id="paket">
+    <div class="container">
+        <div class="section-title">
+            <h2>Pilih Paket Kursus Komputer</h2>
+            <p>
+                Temukan program belajar sesuai kebutuhan Anda.
+                Semua paket utama dirancang dengan pembelajaran
+                bertahap dan praktik langsung.
+            </p>
+        </div>
+
+        <div class="course-grid" id="courseGrid"></div>
+
+        <p class="note">
+            Catatan: Biaya transport dapat berlaku untuk layanan home visit.
+            Konfirmasikan materi, jadwal, dan rincian biaya kepada admin
+            sebelum melakukan pendaftaran.
+        </p>
+    </div>
+</section>
+
+<section id="keunggulan">
+    <div class="container">
+        <div class="section-title">
+            <h2>Mengapa Belajar di Rumah Belajar YMII?</h2>
+            <p>
+                Belajar komputer dengan pilihan program yang fleksibel
+                dan materi yang dapat disesuaikan dengan kebutuhan.
+            </p>
+        </div>
+
+        <div class="method-grid">
+            <div class="method-card">
+                <span>👨‍💻</span>
+                <h3>Fokus pada Praktik</h3>
+                <p>
+                    Belajar sambil mengerjakan latihan agar lebih
+                    memahami penggunaan aplikasi dan teknologi.
+                </p>
+            </div>
+
+            <div class="method-card">
+                <span>🧑‍🎓</span>
+                <h3>Mulai dari Dasar</h3>
+                <p>
+                    Cocok untuk pemula yang ingin membangun
+                    kemampuan komputer secara bertahap.
+                </p>
+            </div>
+
+            <div class="method-card">
+                <span>🗓️</span>
+                <h3>Jadwal Fleksibel</h3>
+                <p>
+                    Konsultasikan pilihan jadwal dan metode
+                    belajar online atau offline kepada admin.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="cta">
+    <div class="container">
+        <h2>Masih Bingung Memilih Paket Kursus?</h2>
+        <p>
+            Ceritakan tujuan belajar Anda. Admin Rumah Belajar Komputer
+            YMII siap membantu memberikan informasi program, materi,
+            dan jadwal yang sesuai.
+        </p>
+
+        <a href="https://wa.me/6282120388854?text=Halo%2C%20saya%20ingin%20konsultasi%20memilih%20paket%20kursus%20komputer."
+           target="_blank" rel="noopener" class="btn btn-primary">
+            Tanya Admin via WhatsApp
+        </a>
+    </div>
+</section>
+
+<section id="faq">
+    <div class="container">
+        <div class="section-title">
+            <h2>Pertanyaan yang Sering Diajukan</h2>
+            <p>Informasi awal sebelum Anda mendaftar kursus.</p>
+        </div>
+
+        <div class="faq">
+            <details>
+                <summary>Apakah pemula bisa mengikuti kursus?</summary>
+                <p>
+                    Bisa. Paket kursus dirancang untuk membantu peserta
+                    mempelajari materi dari dasar sesuai program yang dipilih.
+                </p>
+            </details>
+
+            <details>
+                <summary>Berapa lama durasi kursus?</summary>
+                <p>
+                    Paket utama terdiri dari 10 pertemuan, dengan durasi
+                    2 jam per pertemuan. Paket tertentu seperti Web Design
+                    dapat memiliki durasi dan fasilitas berbeda.
+                </p>
+            </details>
+
+            <details>
+                <summary>Apakah kursus bisa dilakukan secara online?</summary>
+                <p>
+                    Ya, tersedia pilihan belajar online maupun offline.
+                    Silakan konsultasikan metode belajar yang sesuai.
+                </p>
+            </details>
+
+            <details>
+                <summary>Apakah bisa belajar di rumah peserta?</summary>
+                <p>
+                    Layanan home visit dapat dikonsultasikan dengan admin.
+                    Biaya transport tambahan disesuaikan dengan lokasi.
+                </p>
+            </details>
+
+            <details>
+                <summary>Bagaimana cara mendaftar?</summary>
+                <p>
+                    Pilih paket yang diinginkan, tekan tombol Daftar via
+                    WhatsApp, lalu konfirmasikan jadwal dan pembayaran
+                    kepada admin.
+                </p>
+            </details>
+
+            <details>
+                <summary>Apakah peserta mendapatkan sertifikat?</summary>
+                <p>
+                    Peserta dapat memperoleh sertifikat kepesertaan belajar.
+                    Tanyakan kepada admin mengenai ketentuan sertifikat
+                    untuk program yang dipilih.
+                </p>
+            </details>
+        </div>
+    </div>
+</section>
+
+<section id="kontak">
+    <div class="container">
+        <div class="section-title">
+            <h2>Hubungi Rumah Belajar Komputer YMII</h2>
+            <p>
+                Mulai langkah Anda untuk meningkatkan kemampuan komputer.
+            </p>
+        </div>
+
+        <div class="contact-grid">
+            <div class="contact-card">
+                <h3>📍 Lokasi Cileungsi, Bogor</h3>
+                <p>
+                    Perum Harvest City, Cluster Bromelia B9 No. 12,
+                    Cileungsi, Bogor.
+                </p>
+                <p>Website:
+                    <a href="https://www.rumah-belajar.com/"
+                       target="_blank" rel="noopener">
+                        www.rumah-belajar.com
+                    </a>
+                </p>
+            </div>
+
+            <div class="contact-card">
+                <h3>📲 Informasi & Pendaftaran</h3>
+                <p>WhatsApp: 0821-2038-8854</p>
+                <p>Jam layanan: 08.00–21.00 WIB</p>
+                <a class="btn btn-green"
+                   href="https://wa.me/6282120388854?text=Halo%20Rumah%20Belajar%20Komputer%20YMII%2C%20saya%20ingin%20mendaftar%20kursus."
+                   target="_blank" rel="noopener">
+                    Hubungi WhatsApp
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<footer>
+    <div class="container">
+        <p><strong>Rumah Belajar Komputer Privat YMII</strong></p>
+        <p>Belajar Komputer dari Dasar hingga Mahir.</p>
+        <p>
+            <a href="https://www.rumah-belajar.com/">
+                www.rumah-belajar.com
+            </a>
+        </p>
+        <p>&copy; <span id="year"></span> Rumah Belajar Komputer YMII.</p>
+    </div>
+</footer>
+
+<a class="floating-wa"
+   href="https://wa.me/6282120388854?text=Halo%2C%20saya%20ingin%20informasi%20kursus%20komputer."
+   target="_blank" rel="noopener">
+    ☎ WhatsApp
+</a>
+
+<script>
+// =====================================
+// DATA PAKET KURSUS
+// =====================================
+
+const paketKursus = [
+    {
+        nama: "Microsoft Office",
+        icon: "📊",
+        deskripsi: "Belajar aplikasi perkantoran dari dasar.",
+        materi: "Microsoft Word, Excel, dan PowerPoint",
+        pertemuan: 10,
+        durasi: "2 jam",
+        registrasi: 100000,
+        biaya: 1100000,
+        level: "Pemula"
+    },
+    {
+        nama: "Digital Marketing",
+        icon: "📈",
+        deskripsi: "Belajar memasarkan produk melalui internet.",
+        materi: "Penyiapan produk, logo, desain iklan, copywriting, media sosial, dan landing page",
+        pertemuan: 10,
+        durasi: "2 jam",
+        registrasi: 100000,
+        biaya: 1400000,
+        level: "Pemula"
+    },
+    {
+        nama: "AutoCAD",
+        icon: "📐",
+        deskripsi: "Mempelajari dasar desain gambar teknik.",
+        materi: "Pengenalan antarmuka, perintah gambar, editing, dimensi, dan layout",
+        pertemuan: 10,
+        durasi: "2 jam",
+        registrasi: 100000,
+        biaya: 1400000,
+        level: "Pemula"
+    },
+    {
+        nama: "Jaringan Komputer",
+        icon: "🌐",
+        deskripsi: "Memahami dasar jaringan komputer.",
+        materi: "Dasar jaringan, IP address, subnetting, konfigurasi jaringan, dan troubleshooting",
+        pertemuan: 10,
+        durasi: "2 jam",
+        registrasi: 100000,
+        biaya: 1400000,
+        level: "Pemula"
+    },
+    {
+        nama: "Web Design",
+        icon: "🎨",
+        deskripsi: "Belajar membuat tampilan website.",
+        materi: "HTML, CSS, layout responsif, Bootstrap, dan praktik desain website",
+        pertemuan: 5,
+        durasi: "2 jam",
+        registrasi: 100000,
+        biaya: 1500000,
+        level: "Pemula",
+        catatan: "Termasuk domain .my.id dan hosting 1 tahun sesuai paket."
+    },
+    {
+        nama: "Web Programming",
+        icon: "💻",
+        deskripsi: "Belajar membangun website dinamis.",
+        materi: "HTML, CSS, PHP, MySQL, dan praktik web programming",
+        pertemuan: 10,
+        durasi: "2 jam",
+        registrasi: 100000,
+        biaya: 1400000,
+        level: "Dasar pemrograman diperlukan"
+    },
+    {
+        nama: "Excel Lanjutan",
+        icon: "📉",
+        deskripsi: "Tingkatkan kemampuan pengolahan data.",
+        materi: "IF, VLOOKUP, Pivot Table, Macro, UserForm, XLOOKUP, dan fungsi lanjutan",
+        pertemuan: 10,
+        durasi: "2 jam",
+        registrasi: 100000,
+        biaya: 1400000,
+        level: "Dasar Excel"
+    },
+    {
+        nama: "SolidWorks",
+        icon: "⚙️",
+        deskripsi: "Belajar desain dan pemodelan teknik 3D.",
+        materi: "Pengenalan antarmuka, sketch, part, assembly, dan drawing",
+        pertemuan: 10,
+        durasi: "2 jam",
+        registrasi: 100000,
+        biaya: 1400000,
+        level: "Pemula"
+    },
+    {
+        nama: "SketchUp",
+        icon: "🏠",
+        deskripsi: "Belajar pemodelan objek tiga dimensi.",
+        materi: "Pengenalan tools, pemodelan 3D, material, dan visualisasi dasar",
+        pertemuan: 10,
+        durasi: "2 jam",
+        registrasi: 100000,
+        biaya: 1400000,
+        level: "Pemula"
+    },
+    {
+        nama: "Database MySQL",
+        icon: "🗄️",
+        deskripsi: "Belajar mengelola data secara terstruktur.",
+        materi: "Database, tabel, relasi, query SQL, CRUD, dan pengelolaan data",
+        pertemuan: 10,
+        durasi: "2 jam",
+        registrasi: 100000,
+        biaya: 1400000,
+        level: "Pemula"
+    }
+];
+
+// Format angka menjadi rupiah
+function rupiah(angka) {
+    return new Intl.NumberFormat("id-ID", {
+        style: "currency",
+        currency: "IDR",
+        maximumFractionDigits: 0
+    }).format(angka);
+}
+
+// Membuat kartu paket secara otomatis
+const courseGrid = document.getElementById("courseGrid");
+
+paketKursus.forEach(function(paket) {
+    const pesan = `Halo Rumah Belajar Komputer YMII, saya ingin mendaftar kursus ${paket.nama}. Mohon informasi jadwal dan ketentuan pendaftarannya.`;
+
+    const linkWA = "https://wa.me/6282120388854?text=" +
+        encodeURIComponent(pesan);
+
+    const card = document.createElement("article");
+    card.className = "course-card";
+
+    card.innerHTML = `
+        <div class="course-head">
+            <div class="course-icon">${paket.icon}</div>
+            <h3>${paket.nama}</h3>
+            <p>${paket.deskripsi}</p>
+        </div>
+
+        <div class="course-body">
+            <ul class="course-info">
+                <li><strong>Level:</strong> ${paket.level}</li>
+                <li><strong>Pertemuan:</strong> ${paket.pertemuan} kali</li>
+                <li><strong>Durasi:</strong> ${paket.durasi} per pertemuan</li>
+                <li><strong>Materi:</strong> ${paket.materi}</li>
+            </ul>
+
+            <div class="price-box">
+                <div class="price-label">Biaya kursus</div>
+                <div class="price">${rupiah(paket.biaya)}</div>
+                <div class="register-price">
+                    Registrasi: ${rupiah(paket.registrasi)}
+                </div>
+            </div>
+
+            <a class="btn btn-green"
+               href="${linkWA}"
+               target="_blank"
+               rel="noopener">
+                Daftar via WhatsApp
+            </a>
+
+            ${paket.catatan
+                ? `<p class="note">${paket.catatan}</p>`
+                : ""}
+        </div>
+    `;
+
+    courseGrid.appendChild(card);
+});
+
+// Tahun otomatis
+document.getElementById("year").textContent =
+    new Date().getFullYear();
+</script>
+
+</body>
+</html>
+
